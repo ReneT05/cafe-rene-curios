@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Rene Curios: café artesanal, pan recién horneado y un rincón con historia.">
+  <title>Café Rene Curios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Café Rene Curios, inicio">
+      <img src="assets/logo.png" alt="Logo de Café Rene Curios">
+      <span>Café <strong>Rene Curioss</strong></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Navegación principal">
+      <a href="#historia" data-i18n="navStory">Historia</a>
+      <a href="#menu" data-i18n="navMenu">Menú</a>
+      <a href="#galeria" data-i18n="navGallery">Galería</a>
+      <a href="#promociones" data-i18n="navPromos">Promociones</a>
+      <a href="#visitanos" data-i18n="navVisit">Visítanos</a>
+    </nav>
+    <div class="controls">
+      <button id="langToggle" class="pill" aria-label="Cambiar idioma">EN</button>
+      <button id="themeToggle" class="round" aria-label="Activar modo oscuro">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <span class="eyebrow" data-i18n="heroEyebrow">CAFÉ DE BARRIO · DESDE 2018</span>
+        <h1 data-i18n="heroTitle">El sabor que se queda<br><em>cerca de ti.</em></h1>
+        <p data-i18n="heroText">Café recién molido, pan calientito y ese ambiente donde siempre hay lugar para uno más.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#menu" data-i18n="seeMenu">Ver el menú</a>
+          <a class="btn ghost" href="#visitanos" data-i18n="howToArrive">Cómo llegar</a>
+        </div>
+        <div class="mini-facts">
+          <span><b>100%</b> <i data-i18n="mexCoffee">café mexicano</i></span>
+          <span><b>7</b> <i data-i18n="days">días a la semana</i></span>
+          <span><b>20</b> <i data-i18n="specialties">especialidades</i></span>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="sunburst"></div>
+        <div class="coffee-card">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Taza de café artesanal en una mesa de madera">
+          <span class="stamp" data-i18n="freshDaily">HECHO FRESCO<br>TODOS LOS DÍAS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true"><div>CAFÉ ARTESANAL ✦ PAN RECIÉN HORNEADO ✦ BUENAS HISTORIAS ✦ CAFÉ ARTESANAL ✦ PAN RECIÉN HORNEADO ✦</div></section>
+
+    <section class="story section" id="historia">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="ourStory">NUESTRA HISTORIA</span>
+        <h2 data-i18n="storyTitle">Un pequeño rincón con<br>mucho que contar.</h2>
+      </div>
+      <div class="story-grid">
+        <div class="story-photo reveal"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85" alt="Barista preparando café"><span>EST. 2018</span></div>
+        <div class="story-copy reveal">
+          <p data-i18n="storyP1">Café Rene Curios nació en 2018 de una idea sencilla: crear un lugar auténtico donde el buen café y la conversación fueran siempre bienvenidos.</p>
+          <p data-i18n="storyP2">Inspirados por el carácter del norte de México y la identidad retro de nuestro barrio, seleccionamos granos nacionales y preparamos cada bebida con cuidado.</p>
+          <blockquote data-i18n="quote">“Más que servir café, queremos compartir un momento que valga la pena recordar.”</blockquote>
+        </div>
+      </div>
+      <div class="values-grid">
+        <article><span>★</span><h3 data-i18n="mission">Misión</h3><p data-i18n="missionText">Crear experiencias cercanas mediante café mexicano de calidad, atención cálida y productos preparados con dedicación.</p></article>
+        <article><span>◉</span><h3 data-i18n="vision">Visión</h3><p data-i18n="visionText">Ser la cafetería favorita de nuestra comunidad y un referente local de sabor, identidad y hospitalidad.</p></article>
+        <article><span>♥</span><h3 data-i18n="values">Valores</h3><p data-i18n="valuesText">Calidad, honestidad, cercanía, respeto por nuestros productores y orgullo por lo local.</p></article>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-heading centered reveal"><span class="eyebrow" data-i18n="ourMenu">NUESTRO MENÚ</span><h2 data-i18n="menuTitle">Favoritos de la casa</h2><p data-i18n="menuSubtitle">Preparados al momento, con ingredientes seleccionados y mucho carácter.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar productos">
+        <button class="filter active" data-filter="all" data-i18n="all">Todo</button>
+        <button class="filter" data-filter="hot" data-i18n="hot">Calientes</button>
+        <button class="filter" data-filter="cold" data-i18n="cold">Fríos</button>
+        <button class="filter" data-filter="food" data-i18n="food">Pan y comida</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promos section" id="promociones">
+      <div class="promo-main reveal"><span class="eyebrow light" data-i18n="weeklyPromo">PROMOCIÓN DE LA SEMANA</span><h2 data-i18n="promoTitle">Martes de<br>2 × 1</h2><p data-i18n="promoText">En bebidas calientes de tamaño mediano. Comparte el café, no la cuenta.</p><small data-i18n="promoTerms">Válido los martes de 4:00 p.m. a 8:00 p.m. Aplican restricciones.</small></div>
+      <div class="promo-stack">
+        <article class="reveal"><b>–15%</b><div><h3 data-i18n="student">Descuento estudiantil</h3><p data-i18n="studentText">Presenta tu credencial vigente de lunes a viernes.</p></div></article>
+        <article class="reveal"><b>☕</b><div><h3 data-i18n="loyalty">Tarjeta curiosa</h3><p data-i18n="loyaltyText">Compra 6 bebidas y la séptima va por nuestra cuenta.</p></div></article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="galeria">
+      <div class="section-heading reveal"><span class="eyebrow" data-i18n="gallery">GALERÍA</span><h2 data-i18n="galleryTitle">Así se vive Rene Curios</h2></div>
+      <div class="gallery-grid reveal">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Café latte">
+        <img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=900&q=80" alt="Interior de cafetería">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=900&q=80" alt="Granos de café">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Taza de café">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Donas artesanales">
+      </div>
+    </section>
+
+    <section class="visit section" id="visitanos">
+      <div class="visit-info reveal">
+        <span class="eyebrow" data-i18n="visitUs">VISÍTANOS</span><h2 data-i18n="findCorner">Encuentra tu rincón.</h2>
+        <div class="info-row"><b>⌖</b><div><h3 data-i18n="location">Ubicación</h3><p>Av. Universidad 1200, Piedras Negras,<br>Coahuila, México.</p></div></div>
+        <div class="info-row"><b>◷</b><div><h3 data-i18n="hours">Horarios</h3><p><span data-i18n="monFri">Lunes a viernes</span>: 7:00 a.m. – 9:00 p.m.<br><span data-i18n="weekend">Sábado y domingo</span>: 8:00 a.m. – 10:00 p.m.</p></div></div>
+        <div class="info-row"><b>✆</b><div><h3 data-i18n="contact">Contacto</h3><p><a href="tel:+528781234567">+52 878 123 4567</a><br><a href="mailto:hola@renecurios.mx">hola@renecurios.mx</a></p></div></div>
+      </div>
+      <iframe class="map reveal" title="Ubicación de Café Rene Curios" src="https://www.google.com/maps?q=Piedras%20Negras%20Coahuila&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-section section" id="contacto">
+      <div class="contact-intro reveal"><span class="eyebrow light" data-i18n="writeUs">ESCRÍBENOS</span><h2 data-i18n="contactTitle">¿Tienes algo curioso que contarnos?</h2><p data-i18n="contactText">Reservaciones, eventos o simplemente un saludo. Nos encantará leerte.</p></div>
+      <form id="contactForm" class="contact-form reveal">
+        <label><span data-i18n="name">Nombre</span><input name="name" required autocomplete="name" placeholder="Tu nombre"></label>
+        <label><span data-i18n="email">Correo electrónico</span><input name="email" type="email" required autocomplete="email" placeholder="tu@correo.com"></label>
+        <label><span data-i18n="subject">Asunto</span><select name="subject"><option data-i18n="reservation">Reservación</option><option data-i18n="event">Evento</option><option data-i18n="comment">Comentario</option></select></label>
+        <label><span data-i18n="message">Mensaje</span><textarea name="message" rows="4" required placeholder="Cuéntanos..."></textarea></label>
+        <button class="btn cream" type="submit" data-i18n="send">Enviar mensaje</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="assets/logo.png" alt=""><div><strong>Café Rene Curios</strong><span data-i18n="tagline">Todo lo que necesitas, cerca de ti.</span></div></div>
+    <div><h4 data-i18n="explore">Explora</h4><a href="#historia" data-i18n="navStory">Historia</a><a href="#menu" data-i18n="navMenu">Menú</a><a href="#promociones" data-i18n="navPromos">Promociones</a></div>
+    <div><h4 data-i18n="follow">Síguenos</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div>
+    <p class="copyright">© 2026 Café Rene Curios. <span data-i18n="rights">Todos los derechos reservados.</span></p>
+  </footer>
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
